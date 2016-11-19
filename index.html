@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>freeboard</title>
+    <title>Wireless Voltage Monitor</title>
 	<meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -16,7 +16,6 @@
                     $(function()
                     { //DOM Ready
                         freeboard.initialize(true);
-
                         var hashpattern = window.location.hash.match(/(&|#)source=([^&]+)/);
                         if (hashpattern !== null) {
                             $.getJSON(hashpattern[2], function(data) {
@@ -25,7 +24,6 @@
                                 });
                             });
                         }
-
                     });
                 });
     </script>
@@ -42,12 +40,12 @@
     <div id="admin-bar">
         <div id="admin-menu">
             <div id="board-tools">
-                <h1 id="board-logo" class="title bordered">freeboard</h1>
+                <h1 id="board-logo" class="title bordered">Wireless Voltage Monitor</h1>
                 <div id="board-actions">
                     <ul class="board-toolbar vertical">
-                        <li data-bind="click: loadDashboardFromLocalFile"><i id="full-screen-icon" class="icon-folder-open icon-white"></i><label id="full-screen">Load Freeboard</label></li>
+                        <li data-bind="click: loadDashboardFromLocalFile"><i id="full-screen-icon" class="icon-folder-open icon-white"></i><label id="full-screen">Load Dashboard</label></li>
                         <li><i class="icon-download-alt icon-white"></i>
-                            <label data-bind="click: saveDashboardClicked">Save Freeboard</label>
+                            <label data-bind="click: saveDashboardClicked">Save Dashboard</label>
                             <label style="display: none;" data-bind="click: saveDashboard" data-pretty="true">[Pretty]</label>
                             <label style="display: none;" data-bind="click: saveDashboard" data-pretty="false">[Minified]</label>
                         </li>
