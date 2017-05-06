@@ -2,4 +2,4 @@
 
 ## Wireless Voltage Monitor
 
-### Dashboard Concept: https://dg297.github.io/wvm/
+### Dashboard Concept: https://dg297.github.io/Wireless-Voltage-Monitor/
